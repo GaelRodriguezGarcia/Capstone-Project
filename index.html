@@ -12,8 +12,12 @@
     <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/pricing/">
     <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/pricing/">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!--My css file-->
+    <link href="style.css" rel="stylesheet">
 
-    
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
     <!-- Bootstrap core CSS -->
 <link href="/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
@@ -50,7 +54,7 @@
   </head>
   <body>
     
-<header class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+<header class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3  shadow-sm">
   <p class="h3 my-0 me-md-auto fw-Bold">AURA Fitness</p>
   <nav class="my-2 my-md-0 me-md-3">
     <a class="p-2 text-dark" href="#">Why Aura</a>
@@ -58,24 +62,24 @@
     <a class="p-2 text-dark" href="#">Support</a>
     <a class="p-2 text-dark" href="#">Pricing</a>
   </nav>
-  <a class="btn btn-outline-primary" href="#">Sign up</a>
+  
 </header>
 
-<section>
-  <video autoplay loop muted preload width="1920" height="1080">
-    <source src="Media/gym.mp4" type="video/mp4">
+<section id="gymvid">
+  <video height="810" autoplay loop muted preload width="1920" height="1080">
+    <source src="Media/gym2.mp4" type="video/mp4">
   </video>
 </section>
 
 <main class="container">
   <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-    <h1 class="display-4">Membership Pricing</h1>
-    <p class="lead">Select Your Membership</p>
+    <h1 id="mempr" class="display-4">Membership Pricing</h1>
+    <p id="mempr" class="lead">Select Your Membership</p>
   </div>
 
-  <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+  <div  class="row row-cols-1 row-cols-md-3 mb-3 text-center">
     <div class="col">
-      <div class="card mb-4 shadow-sm">
+      <div id="cards" class="card mb-4 shadow-sm">
       <div class="card-header">
         <h4 class="my-0 fw-normal">Basic</h4>
       </div>
@@ -90,12 +94,14 @@
 
           
         </ul>
-        <button type="button" class="w-100 btn btn-lg btn-outline-primary">Get started</button>
+        <button onclick="window.location.href='customerinfo.html';" class="button">
+          <span data-title="lets GO!">GET STARTED</span>
+        </button>
       </div>
     </div>
     </div>
     <div class="col">
-      <div class="card mb-4 shadow-sm">
+      <div id="cards" class="card mb-4 shadow-sm">
       <div class="card-header">
         <h4 class="my-0 fw-normal">Standard</h4>
       </div>
@@ -111,12 +117,14 @@
           <li>Access to all locations</li>
 
         </ul>
-        <button type="button" class="w-100 btn btn-lg btn-outline-primary">Get started</button>
+        <button onclick="window.location.href='customerinfo.html';" class="button">
+          <span data-title="lets GO!">GET STARTED</span>
+        </button>
       </div>
     </div>
     </div>
     <div class="col">
-      <div class="card mb-4 shadow-sm">
+      <div id="cards" class="card mb-4 shadow-sm">
       <div class="card-header">
         <h4 class="my-0 fw-normal">Pro</h4>
       </div>
@@ -132,20 +140,57 @@
           <li>Access to all locations</li>
           <li>Unlimited Bring guest</li>
         </ul>
-        <button type="button" class="w-100 btn btn-lg btn-outline-primary">Get started</button>
+        <button onclick="window.location.href='customerinfo.html';" class="button">
+          <span data-title="lets GO!">GET STARTED</span>
+        </button>
       </div>
     </div>
     </div>
   </div>
+  
+<h1 id="us" class="display-4">WHY US?</h1>
+<p id="uss" class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+  Aura fitness is a gym targeted to those who want a better lifestyle and are willing to put
+   in the work to do so. At aura fitness we don't discriminate between body appearances
+    because everyone gets started somewhere. You showing up to workout shows that you want
+     to improve yourself mentally and physically. That takes a lot to do for someone and
+      we're happy to be a part of your fitness journey. We hope to make a successful
+       and enjoyable gym so our customers enjoy making it a part of their routines.
 
+</p>
+
+  <div class="grid">
+    <div class="item" style="background-image: url(Media/gymdum.jpg)"></div>
+    
+    <div class="item" style="background-image: url(Media/gymcar.webp)"></div>
+    
+    <div class="item" style="background-image: url(Media/clean.jpg)"></div>
+    
+    <div class="item" style="background-image: url(Media/pool.jpg)"></div>
+    
+    <div class="item" style="background-image: url(Media/water.jpg)"></div>
+  </div>
+
+  <h1 id="us" class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">Services</h1>
+  <p id="uss" class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+    Here at Aura fitness we provide many services including all the exercise
+     equipment you could need to reach your fitness goals. This includes free weights
+     , strength training machines, cardiovascular machines, free space area,
+      Swimming pool, locker rooms, sauna, personal training, check-in reward
+       system. There will also be snacks and drinks available for after you
+        calorie burning workouts and nice cold and fresh towels to wipe that
+         hard work.
+  </p>
+
+  
   <footer class="pt-4 my-md-5 pt-md-5 border-top">
     <div class="row">
       <div class="col-12 col-md">
-        <img class="mb-2" src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="24" height="19">
-        <small class="d-block mb-3 text-muted">&copy; 2017-2020</small>
+
+        <small class="d-block mb-3 text-muted">&copy; 2021G.R</small>
       </div>
       <div class="col-6 col-md">
-        <h5>Info</h5>
+        <h5 id="footerinfo">Info</h5>
         <ul class="list-unstyled text-small">
           <li><a class="link-secondary" href="#">1616 W Ruby Dr, Tempe, AZ 85284</a></li>
           <li><a class="link-secondary" href="#">602-589-5000</a></li>
@@ -154,7 +199,7 @@
         </ul>
       </div>
       <div class="col-6 col-md">
-        <h5>social media</h5>
+        <h5 id="footerinfo">social media</h5>
         <ul class="list-unstyled text-small">
           <li><a class="link-secondary" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
             <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
@@ -171,7 +216,7 @@
         </ul>
       </div>
       <div class="col-6 col-md">
-        <h5>About</h5>
+        <h5 id="footerinfo">About</h5>
         <ul class="list-unstyled text-small">
           <li><a class="link-secondary" href="#">Team</a></li>
           <li><a class="link-secondary" href="#">Locations</a></li>
@@ -180,10 +225,12 @@
         </ul>
       </div>
     </div>
+
+    
   </footer>
 </main>
 
-
+<script src="script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
   </body>
 </html>
