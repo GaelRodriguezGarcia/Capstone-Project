@@ -1,9 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 html{
   scroll-behavior: smooth;
 }
 
+video{
+  position: auto;
+}
 
 body{
     background-color: black;
@@ -15,10 +17,12 @@ header{
 
 h1#mempr{
     color: white;
+    font-family: 'Mukta', sans-serif;
 }
 
 p#mempr{
     color: white;
+    font-family: 'Mukta', sans-serif;
 }
 
 h5#footerinfo{
@@ -38,6 +42,22 @@ button#cardb{
 button#cardb:hover{
     background-color: Black;
 }
+
+
+section#us{
+  color: white;
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom:100px;
+}
+
+section#services{
+  color: white;
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom:100px;
+}
+
 
 *{
 	margin: 0px;
