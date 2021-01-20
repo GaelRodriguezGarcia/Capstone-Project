@@ -55,12 +55,9 @@
   <body>
     
 <header class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3  shadow-sm">
-  <a href="index.html" class="h3 my-0 me-md-auto fw-Bold">AURA Fitness</p></a>
-  <nav class="my-2 my-md-0 me-md-3">
-    <a class="p-2 text-dark" href="#">Why Aura</a>
-    <a class="p-2 text-dark" href="#">Personal Training</a>
+  <a id="title" href="index.html" class="h3 my-0 me-md-auto fw-Bold">AURA Fitness</p></a>
+  <nav id="task" class="my-2 my-md-0 me-md-3">
     <a class="p-2 text-dark" href="#">Support</a>
-    <a class="p-2 text-dark" href="#">Pricing</a>
   </nav>
   
 </header>
@@ -83,10 +80,15 @@
           <label for="email">Email</label>
           <input type="email" id="email" name="email">
         </div>
+
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input type="text" id="text" name="subject">
+        </div>
   
         <div class="form-group">
-          <label for="massage">What are your fitness goals</label>
-          <textarea name="massage" id="massage" cols="30" rows="10"></textarea>
+          <label for="message">Your message</label>
+          <textarea name="message" id="message" cols="30" rows="10"></textarea>
         </div>
   
         <button type="submit">Submit</button>

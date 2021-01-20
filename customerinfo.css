@@ -6,6 +6,16 @@
   body {
     font-family: "Montserrat";
   }
+
+a#title{
+  text-decoration: none;
+    color: black;
+}
+
+  nav#task{
+    text-decoration: none;
+    color: black;
+  }
   section {
     height: 100vh;
     width: 100%;
